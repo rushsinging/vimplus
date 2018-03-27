@@ -1,0 +1,11 @@
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'altercation/vim-colors-solarized'
+Plug 'scrooloose/syntastic'
+Plug 'valloric/youcompleteme'
+Plug 'kien/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'majutsushi/tagbar'
+call plug#end()
