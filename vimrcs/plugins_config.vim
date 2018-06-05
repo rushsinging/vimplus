@@ -28,7 +28,7 @@ map <leader>f :MRU<CR>
 if has("win16") || has("win32")
     " Don't do anything
 else
-    let g:yankring_history_dir = '~/.vim_runtime/temp_dirs'
+    let g:yankring_history_dir = '~/.vim/temp_dirs'
 endif
 
 
@@ -125,3 +125,5 @@ nmap <leader>h <c-y>,
 imap $h <c-y>,
 
 autocmd FileType ruby compiler ruby
+
+let g:indent_guides_enable_on_vim_startup = 1
