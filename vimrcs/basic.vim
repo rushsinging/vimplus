@@ -326,7 +326,7 @@ map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
 map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
 
 " When you press <leader>r you can search and replace the selected text
-vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+vnoremap <leader>r "hy:%s/<C-r>h//<left>
 
 " Do :help cope if you are unsure what cope is. It's super useful!
 "
