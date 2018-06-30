@@ -2,3 +2,4 @@ plugged/*
 temp_dirs/*
 .dircolors
 tools
+*.orig
