@@ -13,4 +13,7 @@ Plug 'vim-scripts/YankRing.vim'
 Plug 'tpope/vim-surround'
 Plug 'townk/vim-autoclose'
 Plug 'Yggdroot/indentLine'
+Plug 'moll/vim-node'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 call plug#end()

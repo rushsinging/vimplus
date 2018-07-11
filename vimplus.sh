@@ -13,7 +13,9 @@ endtry' > ~/.vimrc
 
 vim +PlugClean! +PlugUpdate +qal
 
+mkdir -p ~/.vim/temp_dirs/undodir
+
 git clone https://github.com/seebi/dircolors-solarized.git ~/.vim/tools/dircolors-solarized
-dircolors ./tools/dircolors-solarized/dircolors.ansi-dark  >> ~/.vim/.dircolors
+dircolors ./tools/dircolors-solarized/dircolors.ansi-dark  > ~/.vim/.dircolors
 
 echo 'You may add "source ~/.vim/.dircolors" to your bashrc'
