@@ -25,6 +25,7 @@ au FileType python map <buffer> <leader>D ?def
 au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
+au FileType javascript setl shiftwidth=2
 
 au FileType javascript imap <c-t> AJS.log();<esc>hi
 au FileType javascript imap <c-a> alert();<esc>hi
@@ -42,6 +43,12 @@ function! JavaScriptFold()
     endfunction
     setl foldtext=FoldText()
 endfunction
+
+
+""""""""""""""""""""""""""""""
+" => Yaml section
+"""""""""""""""""""""""""""""""
+au FileType yaml setl shiftwidth=2
 
 
 """"""""""""""""""""""""""""""

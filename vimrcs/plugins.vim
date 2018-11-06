@@ -16,4 +16,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'moll/vim-node'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'vim-scripts/nginx.vim'
+Plug 'hynek/vim-python-pep8-indent'
 call plug#end()
