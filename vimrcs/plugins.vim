@@ -1,8 +1,10 @@
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
-Plug 'altercation/vim-colors-solarized'
+"Plug 'altercation/vim-colors-solarized'
+Plug 'lifepillar/vim-solarized8'
 Plug 'scrooloose/syntastic'
 Plug 'valloric/youcompleteme'
 Plug 'kien/ctrlp.vim'
