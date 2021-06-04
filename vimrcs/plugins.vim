@@ -23,4 +23,5 @@ Plug 'vim-scripts/nginx.vim'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'thanethomson/vim-jenkinsfile'
 Plug 'posva/vim-vue'
+Plug 'fatih/vim-go'
 call plug#end()

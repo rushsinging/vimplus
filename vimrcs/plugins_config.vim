@@ -119,7 +119,7 @@ inoremap <expr> <CR>  pumvisible() ? "\<C-y>" : "\<CR>"" "
 " => emmet-vim config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+" autocmd FileType html,css EmmetInstall
 let g:user_emmet_mode='a'    "enable all function in all mode."
 nmap <leader>h <c-y>,
 imap $h <c-y>,
