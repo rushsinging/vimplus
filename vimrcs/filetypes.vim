@@ -10,7 +10,7 @@ au BufNewFile,BufRead *.mako set ft=mako
 au FileType python map <buffer> F :set foldmethod=indent<cr>
 
 au FileType python inoremap <buffer> $r return 
-au FileType python inoremap <buffer> $i import 
+au FileType python inoremap <buffer> $i importk
 au FileType python inoremap <buffer> $p print 
 au FileType python inoremap <buffer> $f #--- PH ----------------------------------------------<esc>FP2xi
 au FileType python map <buffer> <leader>1 /class 
@@ -22,7 +22,7 @@ au FileType python map <buffer> <leader>D ?def
 """"""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
-au FileType javascript call JavaScriptFold()
+" au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
 au FileType javascript setl shiftwidth=2
