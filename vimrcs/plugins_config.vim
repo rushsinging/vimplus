@@ -7,12 +7,13 @@
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
+" => NOW: fzf buffers
 """"""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
-map <leader>m :BufExplorer<cr>
+map <leader>m :Buffers<cr>
 
 
 """"""""""""""""""""""""""""""
