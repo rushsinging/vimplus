@@ -88,7 +88,7 @@ set cmdheight=2
 " A buffer becomes hidden when it is abandoned
 set hid
 
-" Configure backspace so it acts as it should act
+" konfigure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
@@ -307,7 +307,7 @@ map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
 map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
 
 " When you press <leader>r you can search and replace the selected text
-vnoremap <leader>r "hy:%s/<C-r>h//g<left><left>
+vnoremap <leader>r "hy:%s,<C-r>h,,g<left><left>
 
 " Do :help cope if you are unsure what cope is. It's super useful!
 "
@@ -343,7 +343,7 @@ map <leader>s? z=
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+noremap <Leader>M mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Quit
 map <silent> <leader>q :q!<cr>
@@ -410,3 +410,8 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+
+" 设定每行超过100 字符时进行提示
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%101v.*/

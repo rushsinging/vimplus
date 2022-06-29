@@ -14,13 +14,13 @@ let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
 map <leader>m :Buffers<cr>
+map <leader>m :Buffers<cr>
+nnoremap <C-f> :Rg<CR>
 
 
 """"""""""""""""""""""""""""""
-" => MRU plugin
+" => For Golang
 """"""""""""""""""""""""""""""
-let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
 
 
 """"""""""""""""""""""""""""""
@@ -31,39 +31,6 @@ if has("win16") || has("win32")
 else
     let g:yankring_history_dir = '~/.vim/temp_dirs'
 endif
-
-
-""""""""""""""""""""""""""""""
-" => CTRL-P
-""""""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = 0
-
-let g:ctrlp_map = '<c-f>'
-map <c-b> :CtrlPBuffer<cr>
-
-let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
-
-
-""""""""""""""""""""""""""""""
-" => Peepopen
-""""""""""""""""""""""""""""""
-map <leader>j :PeepOpen<cr>
-
-
-
-""""""""""""""""""""""""""""""
-" => ZenCoding
-""""""""""""""""""""""""""""""
-" Enable all functions in all modes
-let g:user_zen_mode='a'
-
-
-""""""""""""""""""""""""""""""
-" => snipMate (beside <TAB> support <CTRL-j>)
-""""""""""""""""""""""""""""""
-ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
-snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -79,9 +46,28 @@ set grepprg=/bin/grep\ -nH
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
+" nnoremap <C-f> :NERDTreeFind<CR>
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+
+" Start NERDTree
+" autocmd VimEnter * NERDTree
+" Jump to the main window.
+" autocmd VimEnter * wincmd p
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

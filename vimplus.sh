@@ -11,7 +11,8 @@ source ~/.vim/me.vim
 catch
 endtry' > ~/.vimrc
 
-vim +PlugClean! +PlugUpdate +qal
+vim +PlugClean! +PlugUpdate +qal 
+vim +"CocInstall coc-go" +qal
 
 mkdir -p ~/.vim/temp_dirs/undodir
 
