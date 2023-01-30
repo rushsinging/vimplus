@@ -23,9 +23,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-" 下面两个插件要配合使用，可以自动生成代码块
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
 
 Plug 'fatih/vim-go'
 Plug 'moll/vim-node'

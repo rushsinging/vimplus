@@ -301,10 +301,8 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
 
 " Open vimgrep and put the cursor in the right position
-map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
-
-" Vimgreps in the current file
-map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
+map <leader>g :Rg 
+map <leader><space> "hy:Rg <C-r><C-w>
 
 " When you press <leader>r you can search and replace the selected text
 vnoremap <leader>r "hy:%s,<C-r>h,,g<left><left>
