@@ -12,7 +12,7 @@ catch
 endtry' > ~/.vimrc
 
 vim +PlugClean! +PlugUpdate +qal 
-# vim -c ':CocInstall coc-go coc-pyright'
+# vim -c 'CocInstall coc-go coc-pyright coc-marketplace'
 
 mkdir -p ~/.vim/temp_dirs/undodir
 
