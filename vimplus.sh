@@ -28,10 +28,11 @@ if [ ! -f ~/.vim/.dircolors ]; then
     dircolors ./tools/dircolors-solarized/dircolors.ansi-dark  > ~/.vim/.dircolors
 fi
 
-ln -sf ~/.vim/tools/bashrc ~/.bashrc
-ln -sf ~/.vim/tools/zshrc ~/.zshrc
-ln -sf ~/.vim/tools/p10k.zsh ~/.p10k.zsh
+ln -sf ~/.vim/terminal/bashrc ~/.bashrc
+ln -sf ~/.vim/terminal/zshrc ~/.zshrc
+ln -sf ~/.vim/terminal/p10k.zsh ~/.p10k.zsh
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 
-echo 'You may add "source ~/.vim/.dircolors" to your bashrc'
+echo
+echo "Please restart your terminal"
