@@ -1,5 +1,12 @@
 #!/bin/bash
 
+set -ex
+
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install coreutils node virtualenvwrapper
+
 echo 'source ~/.vim/vimrcs/basic.vim
 source ~/.vim/vimrcs/filetypes.vim
 source ~/.vim/vimrcs/plugins.vim
@@ -20,5 +27,11 @@ if [ ! -f ~/.vim/.dircolors ]; then
     git clone https://github.com/seebi/dircolors-solarized.git ~/.vim/tools/dircolors-solarized
     dircolors ./tools/dircolors-solarized/dircolors.ansi-dark  > ~/.vim/.dircolors
 fi
+
+ln -sf ~/.vim/tools/bashrc ~/.bashrc
+ln -sf ~/.vim/tools/zshrc ~/.zshrc
+ln -sf ~/.vim/tools/p10k.zsh ~/.p10k.zsh
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 
 echo 'You may add "source ~/.vim/.dircolors" to your bashrc'

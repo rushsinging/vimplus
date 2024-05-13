@@ -17,7 +17,7 @@ Plug 'vim-scripts/nginx.vim'
 Plug 'thanethomson/vim-jenkinsfile'
 Plug 'posva/vim-vue'
 Plug 'mhinz/vim-startify'
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
