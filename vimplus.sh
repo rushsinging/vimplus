@@ -5,11 +5,14 @@ set -ex
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install coreutils node virtualenvwrapper
+brew install coreutils node virtualenvwrapper telnet ripgrep
+
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
 
 echo 'source ~/.vim/vimrcs/basic.vim
-source ~/.vim/vimrcs/filetypes.vim
 source ~/.vim/vimrcs/plugins.vim
+source ~/.vim/vimrcs/filetypes.vim
 source ~/.vim/vimrcs/extended.vim
 source ~/.vim/vimrcs/plugins_config.vim
 
