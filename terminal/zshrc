@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# 自动创建
+export WORKDIR=~/Documents/work
+[ ! -d $WORKDIR ] && mkdir -p $WORKDIR
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
@@ -17,7 +21,7 @@ compinit
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
-[ -f ~/.vim/.dircolors ] && source ~/.vim/.dircolors
+# [ -f ~/.vim/.dircolors ] && source ~/.vim/.dircolors
 
 # Terminal Color Settings
 export CLICOLOR=1
@@ -25,3 +29,11 @@ export CLICOLOR=1
 [ -f /opt/homebrew/bin/virtualenvwrapper.sh ] && source /opt/homebrew/bin/virtualenvwrapper.sh
 
 # export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+#
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
+zplug "zdharma/fast-syntax-highlighting", as:plugin, defer:2

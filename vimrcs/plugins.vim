@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
-Plug 'lifepillar/vim-solarized8'
 Plug 'dense-analysis/ale'
 "Plug 'kien/ctrlp.vim'
 "Plug 'mileszs/ack.vim'
@@ -26,7 +25,10 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
-Plug 'fatih/vim-go'
-Plug 'moll/vim-node'
 Plug 'hynek/vim-python-pep8-indent'
+
+Plug 'lifepillar/vim-solarized8'
+Plug 'fratajczak/one-monokai-vim'
+Plug 'phanviet/vim-monokai-pro'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()

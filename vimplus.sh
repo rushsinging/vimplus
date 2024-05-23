@@ -5,7 +5,7 @@ set -ex
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install coreutils node virtualenvwrapper telnet ripgrep
+brew install coreutils node virtualenvwrapper telnet ripgrep zsh-autosuggestions jq zplug
 
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
@@ -26,10 +26,10 @@ vim +PlugClean! +PlugUpdate +qal
 
 mkdir -p ~/.vim/temp_dirs/undodir
 
-if [ ! -f ~/.vim/.dircolors ]; then
-    git clone https://github.com/seebi/dircolors-solarized.git ~/.vim/tools/dircolors-solarized
-    dircolors ./tools/dircolors-solarized/dircolors.ansi-dark  > ~/.vim/.dircolors
-fi
+#if [ ! -f ~/.vim/.dircolors ]; then
+    #git clone https://github.com/seebi/dircolors-solarized.git ~/.vim/tools/dircolors-solarized
+    #dircolors ./tools/dircolors-solarized/dircolors.ansi-dark  > ~/.vim/.dircolors
+#fi
 
 ln -sf ~/.vim/terminal/bashrc ~/.bashrc
 ln -sf ~/.vim/terminal/zshrc ~/.zshrc

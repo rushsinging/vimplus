@@ -133,9 +133,13 @@ func! CurrentFileDir(cmd)
     return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
 
-set t_Co=16
 " let g:solarized_termcolors=256
-colorscheme solarized8_flat
+" colorscheme solarized8_flat
+" colorscheme monokai_pro
+let g:material_theme_style = "darker"
+let g:material_terminal_italics = 1
+let g:airline_theme = 'material'
+colorscheme material
 
 if has("termguicolors")
     " fix bug for vim
