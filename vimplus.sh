@@ -7,7 +7,7 @@ set -ex
 
 brew install coreutils node virtualenvwrapper telnet ripgrep zsh-autosuggestions jq zplug
 
-brew tap homebrew/cask-fonts
+brew tap homebrew/homebrew-cask
 brew install --cask font-fira-code
 
 echo 'source ~/.vim/vimrcs/basic.vim

@@ -26,6 +26,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # Terminal Color Settings
 export CLICOLOR=1
 
+export VIRTUALENVWRAPPER_PYTHON=python3
 [ -f /opt/homebrew/bin/virtualenvwrapper.sh ] && source /opt/homebrew/bin/virtualenvwrapper.sh
 
 # export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
@@ -37,3 +38,5 @@ export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 zplug "zdharma/fast-syntax-highlighting", as:plugin, defer:2
+
+export PATH=/Users/jade/go/bin:$PATH
