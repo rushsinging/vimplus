@@ -56,3 +56,10 @@ function! CoffeeScriptFold()
     setl foldlevelstart=1
 endfunction
 au FileType coffee call CoffeeScriptFold()
+
+
+
+""""""""""""""""""""""""""""""
+" => Golang section
+"""""""""""""""""""""""""""""""
+" autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
