@@ -24,11 +24,13 @@ Plug 'antoinemadec/coc-fzf'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'sheerun/vim-polyglot'
 
 Plug 'hynek/vim-python-pep8-indent'
 
 Plug 'lifepillar/vim-solarized8'
 Plug 'fratajczak/one-monokai-vim'
+Plug 'joshdick/onedark.vim', { 'branch': 'main' }
 Plug 'phanviet/vim-monokai-pro'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()

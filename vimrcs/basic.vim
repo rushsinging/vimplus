@@ -134,11 +134,6 @@ set nu
 " Enable syntax highlighting
 syntax on
 
-try
-    colorscheme desert
-catch
-endtry
-
 set background=dark
 
 " Set extra options when running in GUI mode

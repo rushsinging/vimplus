@@ -39,9 +39,36 @@ source $ZPLUG_HOME/init.zsh
 
 zplug "zdharma/fast-syntax-highlighting", as:plugin, defer:2
 
-export PATH=/Users/jade/go/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=/opt/homebrew/opt/curl/bin:/opt/homebrew/sbin:/opt/homebrew/opt/libpq/bin:$GOPATH/bin:/opt/homebrew/opt/go/bin:$PATH
+export PATH="$HOME/.cargo/bin:$HOME/.local/bin:/opt/homebrew/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 
 awsctx() {
   export AWS_SDK_LOAD_CONFIG=1
   export AWS_PROFILE=$(aws configure list-profiles | fzf)
 }
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+# for k8s
+source <(kubectl completion zsh)
+
+# for nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias ap='ansible-playbook'
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/jade/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
+. "$HOME/.local/bin/env"

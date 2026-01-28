@@ -104,6 +104,10 @@
 | n    | <F9>                   |                                         | 停止 Markdown 预览                                  | markdonw-preview |
 | n    | <leader>ci             |                                         | 增加/取消注释                                       | nerdcommenter    |
 | n    | <leader>cc             |                                         | 增加注释                                            | nerdcommenter    |
+| n    | gi                     | coc 相关                                | 跳转到实现                                          | coc              |
+| n    | gr                     | coc 相关                                | 跳转到引用                                          | coc              |
+| n    | gd                     | coc 相关                                | 跳转到定义                                          | coc              |
+| n    | gt                     | coc 相关                                | 跳转到类型定义                                      | coc              |
 
 ## 推荐的 COC 插件
 
